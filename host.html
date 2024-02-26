@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="p7.jpg" type="image/x-icon">
+    <title>Happy Sesh !!</title>
+    <link rel="stylesheet" href="host.css">
+    <script src='https://unpkg.com/trianglify@^4/dist/trianglify.bundle.js'></script>
+    <script src="host.js" defer></script>
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+</head>
+<body>
+    <div id="tri"></div>
+    <div class="display">
+        <div id="receiver-id">ID:</div>
+        <div id="comm">
+            <div id="messages"></div>
+            <div id="videos">
+                <video id="remote-video"></video>
+                <video id="local-video"></video>
+            </div>
+        </div>
+        <div id="box">
+            <input type="text" id="sendMessageBox" placeholder="Type here..." autofocus="true" />
+            <button type="button" id="sendButton">Send</button>
+            <button type="button" id="clearMsgsButton">Clear Msgs</button>
+        </div>
+    </div>
+</body>
+</html>

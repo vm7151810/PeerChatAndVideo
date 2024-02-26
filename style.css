@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Lucida Console", Monaco, monospace;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#tri {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+#body {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.prof {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile1, .profile2 {
+    border: 2px solid #ddd;
+    width: 10%;
+    height: 10%;
+    border-radius: 20%;
+    box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.2), 10px 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#dots {
+    width: 20%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dot {
+    height: 22px;
+    width: 22px;
+    border: 2px inset #ebe9e9;
+    background-color: rgb(59, 57, 57);
+    border-radius: 50%;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.butn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    width: 100%;
+}
+
+#join {
+    padding-top: 1.5%;
+    width: 12%;
+    height: 20%;
+}
+
+#create {
+    width: 15%;
+    height: 20%;
+}
+
+.pushable {
+    width: 100%;
+    height: 20%;
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+}
+
+.front {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    border-radius: 12px;
+    font-size: 130%;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-5px);
+    will-change: transform;
+    transition: transform 250ms;
+}
+
+.pushable:active .front {
+    transform: translateY(-2px);
+}
+
+.pushable:hover .front {
+    transform: translateY(-8px);
+}
+
+.pushable:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.push {
+    width: 100%;
+    height: 20%;
+    background: hsl(221, 72%, 30%);
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+}
+
+.frnt {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    border-radius: 12px;
+    font-size: 130%;
+    background: hsl(221, 88%, 56%);
+    color: white;
+    transform: translateY(-5px);
+    will-change: transform;
+    transition: transform 250ms;
+}
+
+.push:active .frnt {
+    transform: translateY(-2px);
+}
+
+.push:hover .frnt {
+    transform: translateY(-8px);
+}
+
+.push:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.join, .create {
+    flex: 1;
+}
+
