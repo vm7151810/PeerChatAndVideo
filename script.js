@@ -10,9 +10,9 @@ const pattern = trianglify({
 something.appendChild(pattern.toCanvas());
 
 function joinRoom() {
-  location.href = `/member.html`;
+  location.href = `./member.html`;
 }
 
 function createRoom() {
-  location.href = `/host.html`;
+  location.href = `./host.html`;
 }
